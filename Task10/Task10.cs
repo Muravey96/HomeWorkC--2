@@ -8,4 +8,8 @@
 Console.Write("Введите трехзначное число: ");
 int userInput = Convert.ToInt32(Console.ReadLine());
 string num2 = Convert.ToString(userInput);
+/* Или просто:
+string userInput = Console.ReadLine() ?? "";
+Console.WriteLine($"{userInput}->" + userInput[1]); 
+*/
 Console.WriteLine($"{userInput}->" +num2[1]); 
